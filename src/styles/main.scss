@@ -1,0 +1,36 @@
+$primary-blue: #004a99; $success-green: #28a745; $warning-red: #dc3545;
+
+.data-panel { padding: 20px; background: #f8f9fa; border-left: 1px solid #dee2e6; height: 100vh; overflow-y: auto;
+
+.field-group { margin-bottom: 15px; padding: 10px; border: 1px solid transparent; transition: all 0.2s;
+
+&:hover {
+  background: #fff;
+  border-color: $primary-blue;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+label {
+  display: block;
+  font-size: 0.8rem;
+  color: #6c757d;
+  text-transform: uppercase;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  font-weight: 600;
+  border: 1px solid #ced4da;
+}
+
+.confidence {
+  font-size: 0.7rem;
+  &.high { color: $success-green; }
+  &.low { color: $warning-red; }
+}
+
+
+} }
+
+.btn-submit { width: 100%; padding: 12px; background: $primary-blue; color: white; border: none; cursor: pointer; margin-top: 20px; }
